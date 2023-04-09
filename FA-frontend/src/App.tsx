@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Scorecard from './Scorecard'
+import Scorecard from './Home'
 import { Container } from '@mui/material'
 
 function App() {
