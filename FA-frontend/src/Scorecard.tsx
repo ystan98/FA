@@ -17,10 +17,10 @@ const Scorecard: React.FC<CreditScorecardProps> = ({ scores, scoresBP, returnHom
         p: 2,
         mb: 3,
         textAlign: "center",
-        backgroundColor: totalScore > 518 ? '#D4EDDA' : '#F8D7DA',
+        backgroundColor: totalScore > 560 ? '#D4EDDA' : '#F8D7DA',
       }}>
         <Typography variant="body1">
-          {totalScore > 520 ?
+          {totalScore > 560 ?
             <><strong>Approved!</strong> Your credit score is high enough to be approved for a loan.</>
             : <><strong>Declined!</strong> Your credit score is too low to be approved for a loan.</>}
         </Typography>
