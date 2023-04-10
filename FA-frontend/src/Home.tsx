@@ -23,7 +23,7 @@ interface FormData {
 }
 
 const Home = () => {
-  const [isScorecard, setIsScorecard] = useState(true)
+  const [isScorecard, setIsScorecard] = useState(false)
   const [scores, setScores] = useState<{[key: string]: number}>({})
   const [scoresBP, setScoresBP] = useState<{[key: string]: number}>({})
 
