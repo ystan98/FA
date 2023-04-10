@@ -50,10 +50,10 @@ export function getOccupationScore(occupationType: string): Scores {
   if (occupationVal < 6) {
     score = 29;
     scoreBP = -6;
-  } else if (occupationVal >= 6 && occupationVal < 8) {
+  } else if (occupationVal >= 6 && occupationVal < 9) {
     score = 31;
     scoreBP = -3;
-  } else if (occupationVal >= 8) {
+  } else if (occupationVal >= 9) {
     score = 38;
     scoreBP = 4;
   }
