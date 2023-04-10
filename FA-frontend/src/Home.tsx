@@ -47,23 +47,44 @@ const Home = () => {
     social_circle_defaults: null,
   })
 
-  const examplePassData = {
-    age: "23",
-    annual_income: "100000",
-    annuity_amount: "14000",
-    credit_amount: "50000",
-    days_employed: "1000",
+  const exampleFailData = {
+    age: 23,
+    annual_income: 100000,
+    annuity_amount: 14000,
+    credit_amount: 50000,
+    days_employed: 1000,
     education_level: "Academic degree",
-    external_source_2: "0.4",
-    family_size: "4",
+    external_source_2: 0.4,
+    family_size: 4,
     family_status: "Single / not married",
     housing_type: "With parents",
     income_type: "State servant",
     loan_type: "Cash loans",
     occupation_type: "High skill tech staff",
     owns_car: "N",
-    social_circle_defaults: "2"
+    social_circle_defaults: 2
   }
+
+  const examplePassData = {
+    age: 23,
+    annual_income: 100000,
+    annuity_amount: 14000,
+    credit_amount: 50000,
+    days_employed: 1000,
+    education_level: "Academic degree",
+    external_source_2: 0.4,
+    family_size: 4,
+    family_status: "Single / not married",
+    housing_type: "With parents",
+    income_type: "State servant",
+    loan_type: "Cash loans",
+    occupation_type: "High skill tech staff",
+    owns_car: "N",
+    social_circle_defaults: 2
+  }
+  
+  // const [formData, setFormData] = useState<FormData>(exampleFailData)
+  // const [formData, setFormData] = useState<FormData>(examplePassData)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
