@@ -17,10 +17,10 @@ const Scorecard: React.FC<CreditScorecardProps> = ({ scores, scoresBP, returnHom
         p: 2,
         mb: 3,
         textAlign: "center",
-        backgroundColor: totalScore > 560 ? '#D4EDDA' : '#F8D7DA',
+        backgroundColor: totalScore > 540 ? '#D4EDDA' : '#F8D7DA',
       }}>
         <Typography variant="body1">
-          {totalScore > 560 ?
+          {totalScore > 540 ?
             <><strong>Approved!</strong> Your credit score is high enough to be approved for a loan.</>
             : <><strong>Declined!</strong> Your credit score is too low to be approved for a loan.</>}
         </Typography>
@@ -126,7 +126,7 @@ const Scorecard: React.FC<CreditScorecardProps> = ({ scores, scoresBP, returnHom
             <TableRow sx={{ backgroundColor: "#F8F9FA" }}>
               <TableCell><b>Aggregate Scores</b></TableCell>
               <TableCell sx={{ textAlign: "center" }}><b>{Object.values(scores).reduce((a, b) => a + b, 0)}</b></TableCell>
-              <TableCell sx={{ textAlign: "center" }}><b>{Object.values(scoresBP).reduce((a, b) => a + b, 0)}</b></TableCell>
+              <TableCell sx={{ textAlign: "center" }}><b>{Object.values(scoresBP).reduce((a, b) => a + b, 0) + 514}</b></TableCell>
             </TableRow>
           </TableBody>
         </Table>
